@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\OfficeLunchVote\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5463A6DD-B5A4-446A-9940-EF4BB54B549F}|OfficeLunchVote.Server\\OfficeLunchVote.Server.csproj|c:\\users\\admin\\source\\repos\\officelunchvote\\officelunchvote.server\\controllers\\votingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5463A6DD-B5A4-446A-9940-EF4BB54B549F}|OfficeLunchVote.Server\\OfficeLunchVote.Server.csproj|solutionrelative:officelunchvote.server\\controllers\\votingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55F608A6-3153-4DBC-B1E4-220525950AFC}|OfficeLunchVote.Grains\\OfficeLunchVote.Grains.csproj|c:\\users\\admin\\source\\repos\\officelunchvote\\officelunchvote.grains\\grains\\votinggrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55F608A6-3153-4DBC-B1E4-220525950AFC}|OfficeLunchVote.Grains\\OfficeLunchVote.Grains.csproj|solutionrelative:officelunchvote.grains\\grains\\votinggrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55F608A6-3153-4DBC-B1E4-220525950AFC}|OfficeLunchVote.Grains\\OfficeLunchVote.Grains.csproj|c:\\users\\admin\\source\\repos\\officelunchvote\\officelunchvote.grains\\interfaces\\ivotinggrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55F608A6-3153-4DBC-B1E4-220525950AFC}|OfficeLunchVote.Grains\\OfficeLunchVote.Grains.csproj|solutionrelative:officelunchvote.grains\\interfaces\\ivotinggrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IVotingGrain.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\OfficeLunchVote\\OfficeLunchVote.Grains\\Interfaces\\IVotingGrain.cs",
+              "RelativeDocumentMoniker": "OfficeLunchVote.Grains\\Interfaces\\IVotingGrain.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\OfficeLunchVote\\OfficeLunchVote.Grains\\Interfaces\\IVotingGrain.cs",
+              "RelativeToolTip": "OfficeLunchVote.Grains\\Interfaces\\IVotingGrain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T19:30:17.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VotingGrain.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\OfficeLunchVote\\OfficeLunchVote.Grains\\Grains\\VotingGrain.cs",
+              "RelativeDocumentMoniker": "OfficeLunchVote.Grains\\Grains\\VotingGrain.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\OfficeLunchVote\\OfficeLunchVote.Grains\\Grains\\VotingGrain.cs",
+              "RelativeToolTip": "OfficeLunchVote.Grains\\Grains\\VotingGrain.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAuwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T19:24:01.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VotingController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\OfficeLunchVote\\OfficeLunchVote.Server\\Controllers\\VotingController.cs",
+              "RelativeDocumentMoniker": "OfficeLunchVote.Server\\Controllers\\VotingController.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\OfficeLunchVote\\OfficeLunchVote.Server\\Controllers\\VotingController.cs",
+              "RelativeToolTip": "OfficeLunchVote.Server\\Controllers\\VotingController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowBkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T19:21:21.815Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

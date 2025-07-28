@@ -1,0 +1,203 @@
+﻿@page "/vote"
+@using OfficeLunchVote.Client.Services
+@using OfficeLunchVote.Client.services
+@inject NavigationManager Navigation
+@inject HttpClient Http;
+
+
+@if(user == "clock")
+{
+    @if (!string.IsNullOrWhiteSpace(clockNotification))
+    {
+        <h2>@clockNotification</h2>
+    }
+
+    <input type="datetime-local" @bind="selectedDateTime" />
+
+    <button @onclick="SetDateTime">Set Date And Time</button>
+}
+else
+{
+    @if (!string.IsNullOrWhiteSpace(voteNotification))
+    {
+        <h2>@voteNotification</h2>
+    }
+
+    <button @onclick="CreateVote">Create Vote</button>
+
+    if (hasAccessToVote)
+    {
+        <select @bind="selectedPlace">
+            @foreach (var place in places)
+            {
+                <option value="@place">@place</option>
+            }
+        </select>
+
+        <button @onclick="SumbitVote">Vote</button>
+    }
+    else
+    {
+        <button @onclick="GetResultsAsync">Get Results</button>
+    }
+}
+
+@code {
+    private bool hasAccessToVote;
+
+    private string? clockNotification;
+    private string? voteNotification;
+
+    private List<string> places = new List<string>();
+    private string? selectedPlace = string.Empty;
+    private DateTime? selectedDateTime;
+
+    private string? user;
+
+    private async Task CreateVote()
+    {
+        if (string.IsNullOrWhiteSpace(user))
+        {
+            clockNotification = "User is required.";
+            StateHasChanged();
+            return;
+        }
+
+        var resposne = await VotingService.CreateVoteAsync(Http, user);
+        if (!string.IsNullOrWhiteSpace(resposne.errorMessage))
+        {
+            voteNotification = resposne.errorMessage;
+        }
+        else
+        {
+            voteNotification = $"Vote is successfully created.";
+        }
+        StateHasChanged();
+    }
+
+    private async Task SetDateTime()
+    {
+        if (string.IsNullOrWhiteSpace(user))
+        {
+            clockNotification = "User is required.";
+            StateHasChanged();
+            return;
+        }
+
+        if (selectedDateTime == null)
+        {
+            voteNotification = "DateTime is required.";
+            StateHasChanged();
+            return;
+        }
+
+        var resposne = await TimeService.SetServerTimeAsync(Http, user, selectedDateTime.Value);
+        if (!string.IsNullOrWhiteSpace(resposne.errorMessage))
+        {
+            clockNotification = resposne.errorMessage;
+        }
+        else
+        {
+            clockNotification = $"You successfully set the date and time to {selectedDateTime}";
+        }
+        StateHasChanged();
+    }
+
+    private async Task SumbitVote()
+    {
+        if (string.IsNullOrWhiteSpace(selectedPlace))
+        {
+            selectedPlace = places.FirstOrDefault();
+            StateHasChanged();
+        }
+
+        if (string.IsNullOrWhiteSpace(user))
+        {
+            voteNotification = "User is required.";
+            StateHasChanged();
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(selectedPlace))
+        {
+            voteNotification = "PLace is required.";
+            StateHasChanged();
+            return;
+        }
+
+        var resposne = await VotingService.SubmitVoteAsync(Http, user, selectedPlace);
+        if (!string.IsNullOrWhiteSpace(resposne.errorMessage))
+        {
+            voteNotification = resposne.errorMessage;
+        }
+        else
+        {
+            voteNotification = $"You successfully vote for {selectedPlace}.";
+        }
+        StateHasChanged();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var url = Navigation.ToAbsoluteUri(Navigation.Uri).ToString();
+        if (url.Contains("?user="))
+        {
+            var parts = url.Split("?user=");
+            if (parts.Length > 1)
+            {
+                user = parts[1].Split('&')[0].ToLower();
+            }
+        }
+
+        if (string.IsNullOrWhiteSpace(user))
+        {
+            voteNotification = "User is required.";
+            StateHasChanged();
+            return;
+        }
+
+        var isVotingClosed = await VotingService.IsVotingClosedAsync(Http);
+        if (isVotingClosed)
+        {
+            voteNotification = $"Dear {user}, voting is closed.";
+            StateHasChanged();
+            return;
+        }
+
+        var result = await VotingService.IsUserAlreadyVotedAsync(Http, user);
+        if (!string.IsNullOrWhiteSpace(result.errorMessage))
+        {
+            voteNotification = result.errorMessage;
+            StateHasChanged();
+            return;
+        }
+
+        if (result.alreadyVoted)
+        {
+            voteNotification = $"{user}, you have already voted.";
+            StateHasChanged();
+            return;
+        }
+
+        hasAccessToVote = true;
+        StateHasChanged();
+
+        places = await VotingService.GetPlacesAsync(Http);
+    }
+
+    private async Task GetResultsAsync()
+    {
+        var response = await VotingService.GetResultsAsync(Http);
+
+        if (!string.IsNullOrWhiteSpace(response.errorMessage))
+        {
+            voteNotification = response.errorMessage ?? "Results are not available.";
+        }
+        else
+        {
+            voteNotification = string.Join(", ", response.results!.Select(kvp => $"{kvp.Key}: {kvp.Value}"));
+        }
+
+        StateHasChanged();
+    }
+}

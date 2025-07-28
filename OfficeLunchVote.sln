@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33717.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OfficeLunchVote.Grains", "OfficeLunchVote.Grains\OfficeLunchVote.Grains.csproj", "{55F608A6-3153-4DBC-B1E4-220525950AFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeLunchVote.Client", "OfficeLunchVote.Client\OfficeLunchVote.Client.csproj", "{E3236DE2-483F-4142-A982-920AD45ACC86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeLunchVote.AppHost", "OfficeLunchVote.AppHost\OfficeLunchVote.AppHost.csproj", "{9BC2D0ED-0F81-4B22-8DC9-19C0AE666BB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeLunchVote.ServiceDefaults", "OfficeLunchVote.ServiceDefaults\OfficeLunchVote.ServiceDefaults.csproj", "{3D10A7A7-B868-50CC-A6F9-04A05F2BE69F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeLunchVote.Server", "OfficeLunchVote.Server\OfficeLunchVote.Server.csproj", "{5463A6DD-B5A4-446A-9940-EF4BB54B549F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55F608A6-3153-4DBC-B1E4-220525950AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F608A6-3153-4DBC-B1E4-220525950AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F608A6-3153-4DBC-B1E4-220525950AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F608A6-3153-4DBC-B1E4-220525950AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3236DE2-483F-4142-A982-920AD45ACC86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3236DE2-483F-4142-A982-920AD45ACC86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3236DE2-483F-4142-A982-920AD45ACC86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3236DE2-483F-4142-A982-920AD45ACC86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BC2D0ED-0F81-4B22-8DC9-19C0AE666BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC2D0ED-0F81-4B22-8DC9-19C0AE666BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC2D0ED-0F81-4B22-8DC9-19C0AE666BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC2D0ED-0F81-4B22-8DC9-19C0AE666BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D10A7A7-B868-50CC-A6F9-04A05F2BE69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D10A7A7-B868-50CC-A6F9-04A05F2BE69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D10A7A7-B868-50CC-A6F9-04A05F2BE69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D10A7A7-B868-50CC-A6F9-04A05F2BE69F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5463A6DD-B5A4-446A-9940-EF4BB54B549F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5463A6DD-B5A4-446A-9940-EF4BB54B549F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5463A6DD-B5A4-446A-9940-EF4BB54B549F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5463A6DD-B5A4-446A-9940-EF4BB54B549F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DFA6510-61A6-4C0C-B927-C453B5C21AF4}
+	EndGlobalSection
+EndGlobal

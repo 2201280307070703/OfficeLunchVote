@@ -1,0 +1,6 @@
+@OfficeLunchVote.Server_HostAddress = http://localhost:5212
+
+GET {{OfficeLunchVote.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
