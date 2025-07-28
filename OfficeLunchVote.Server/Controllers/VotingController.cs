@@ -38,7 +38,7 @@ namespace OfficeLunchVote.Server.Controllers
                 return BadRequest($"Vote for this date - {creationDate} already exists.");
             }
 
-            return Ok();
+            return Ok(true);
         }
 
         [HttpPost("vote")]
@@ -131,17 +131,6 @@ namespace OfficeLunchVote.Server.Controllers
 
             var places = await grain.GetPlacesAsync();
             return Ok(places);
-        }
-
-        [HttpGet("isVoteCreated")]
-        public async Task<IActionResult> IsVoteCreated()
-        {
-            var now = await GetCurrentServerTimeAsync();
-            var date = DateOnly.FromDateTime(now);
-            var grain = _grainFactory.GetGrain<IVotingGrain>(date.ToString());
-
-            var isVoteCreated = await grain.IsVoteCreatedAsync();
-            return Ok(isVoteCreated);
         }
     }
 }

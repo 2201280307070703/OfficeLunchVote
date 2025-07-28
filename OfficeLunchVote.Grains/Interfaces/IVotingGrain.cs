@@ -9,6 +9,5 @@
         Task<bool> IsVotingClosedAsync();
         Task<DateTime> GetClosingTimeAsync();
         Task<List<string>> GetPlacesAsync();
-        Task<bool> IsVoteCreatedAsync();
     }
 }

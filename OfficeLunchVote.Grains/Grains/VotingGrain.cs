@@ -54,7 +54,7 @@ namespace Grains
                 return false;
             }
 
-            if (await IsVoteCreatedAsync())
+            if (_state.State?.Date != default)
             {
                 return false;
             }
@@ -128,12 +128,6 @@ namespace Grains
         public Task<List<string>> GetPlacesAsync()
         {
             return Task.FromResult(_places);
-        }
-
-        public Task<bool> IsVoteCreatedAsync()
-        {
-            bool isCreated = _state.State.Date != default && _state.RecordExists;
-            return Task.FromResult(isCreated);
         }
 
         private bool IsAfterDeadline(DateTime now)
