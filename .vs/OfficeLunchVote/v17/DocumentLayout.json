@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{55F608A6-3153-4DBC-B1E4-220525950AFC}|OfficeLunchVote.Grains\\OfficeLunchVote.Grains.csproj|solutionrelative:officelunchvote.grains\\grains\\votinggrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55F608A6-3153-4DBC-B1E4-220525950AFC}|OfficeLunchVote.Grains\\OfficeLunchVote.Grains.csproj|c:\\users\\admin\\source\\repos\\officelunchvote\\officelunchvote.grains\\interfaces\\ivotinggrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55F608A6-3153-4DBC-B1E4-220525950AFC}|OfficeLunchVote.Grains\\OfficeLunchVote.Grains.csproj|solutionrelative:officelunchvote.grains\\interfaces\\ivotinggrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5463A6DD-B5A4-446A-9940-EF4BB54B549F}|OfficeLunchVote.Server\\OfficeLunchVote.Server.csproj|c:\\users\\admin\\source\\repos\\officelunchvote\\officelunchvote.server\\controllers\\votingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5463A6DD-B5A4-446A-9940-EF4BB54B549F}|OfficeLunchVote.Server\\OfficeLunchVote.Server.csproj|solutionrelative:officelunchvote.server\\controllers\\votingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -22,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IVotingGrain.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\OfficeLunchVote\\OfficeLunchVote.Grains\\Interfaces\\IVotingGrain.cs",
-              "RelativeDocumentMoniker": "OfficeLunchVote.Grains\\Interfaces\\IVotingGrain.cs",
-              "ToolTip": "C:\\Users\\admin\\source\\repos\\OfficeLunchVote\\OfficeLunchVote.Grains\\Interfaces\\IVotingGrain.cs",
-              "RelativeToolTip": "OfficeLunchVote.Grains\\Interfaces\\IVotingGrain.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T20:29:45.49Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -45,22 +28,22 @@
               "RelativeDocumentMoniker": "OfficeLunchVote.Grains\\Grains\\VotingGrain.cs",
               "ToolTip": "C:\\Users\\admin\\source\\repos\\OfficeLunchVote\\OfficeLunchVote.Grains\\Grains\\VotingGrain.cs",
               "RelativeToolTip": "OfficeLunchVote.Grains\\Grains\\VotingGrain.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowDgAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowDMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T20:27:34.853Z",
+              "WhenOpened": "2025-07-30T05:14:12.708Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "VotingController.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\OfficeLunchVote\\OfficeLunchVote.Server\\Controllers\\VotingController.cs",
               "RelativeDocumentMoniker": "OfficeLunchVote.Server\\Controllers\\VotingController.cs",
               "ToolTip": "C:\\Users\\admin\\source\\repos\\OfficeLunchVote\\OfficeLunchVote.Server\\Controllers\\VotingController.cs",
               "RelativeToolTip": "OfficeLunchVote.Server\\Controllers\\VotingController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCIAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T20:23:18.8Z",
+              "WhenOpened": "2025-07-30T05:12:29.709Z",
               "EditorCaption": ""
             }
           ]

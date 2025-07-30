@@ -54,7 +54,7 @@ namespace Grains
                 return false;
             }
 
-            if (_state.State?.Date != default)
+            if (_state.State.CreatedAt != default)
             {
                 return false;
             }

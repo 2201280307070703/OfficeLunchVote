@@ -32,8 +32,8 @@ namespace OfficeLunchVote.Server.Controllers
             var creationDate = DateOnly.FromDateTime(now);
             var votingGrain = _grainFactory.GetGrain<IVotingGrain>(creationDate.ToString());
 
-            var isAlreadyCreated = await votingGrain.CreateVoteAsync(user, creationDate);
-            if (isAlreadyCreated)
+            var successfulCreation = await votingGrain.CreateVoteAsync(user, creationDate);
+            if (!successfulCreation)
             {
                 return BadRequest($"Vote for this date - {creationDate} already exists.");
             }
